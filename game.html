@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <img hidden id="youLost" src="assets/youLost.png">
+  <img hidden id="youWon" src = "assets/youWon.png">
+  
+  <img src="assets/mouseCardback.png" id="enemyPlay">
+ 
+  <div class="tower2">
+    <img src="assets/enemyTower.png" id="enemyTower">
+    <p id="enemyHealth" class="overlay-text">20/20
+  </p>
+  </div>
+
+  <div class="tower1">
+    <img src="assets/playerTower.png" id="playerTower">
+    <p id="playerHealth" class="overlay-text">10/10</p>
+  </div>
+  
+  <div class="deck">
+    <img src="assets/duckCardback.png" id="c0" class="playerCard" onclick="play()">
+    <img src="assets/duckCardback.png" id="c1" class="playerCard"  onclick="play()">
+    <img src="assets/duckCardback.png" id="c2" class="playerCard"  onclick="play()">
+    <img src="assets/duckCardback.png" id="c3" class="playerCard"  onclick="play()">
+    <img src="assets/duckCardback.png" id="c4" class="playerCard"  onclick="play()">
+  </div>
+  
+  <div id="restartButton">
+    <a hidden id="results" href="index.html">
+      <button onclick="buttonAudio()">RESTART</button> 
+    </a>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
